@@ -113,7 +113,7 @@ class hbase::params {
   $template = 'hbase/hbase-site.xml.erb'
   $options = ''
   $service_autorestart = true
-  $version = '0.94.11'
+  $version = '0.94.12'
   $absent = false
   $disable = false
   $disableboot = false
