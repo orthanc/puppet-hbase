@@ -353,7 +353,7 @@ class hbase (
 
   ### Internal vars depending on user's input
   $real_install_source = $hbase::install_source ? {
-    ''      => "http://www.apache.org/dist/hbase/hbase-${hbase::version}/hbase-${hbase::version}.tar.gz",
+    ''      => "http://www.apache.org/dist/hbase/hbase-${hbase::version}/hbase-${hbase::version}-bin.tar.gz",
     default => $hbase::install_source,
   }
 

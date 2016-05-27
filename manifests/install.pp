@@ -57,6 +57,7 @@ class hbase::install {
       puppi::netinstall { 'netinstall_hbase':
         url                 => $hbase::real_install_source,
         destination_dir     => $hbase::install_destination,
+	extracted_dir       => "hbase-${hbase::version}",
         owner               => $hbase::process_user,
         group               => $hbase::process_user,
         noop                => $hbase::bool_noops,
